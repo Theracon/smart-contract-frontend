@@ -1,11 +1,14 @@
 {
+  "site": {
+    "id": "eb4db3d4-46de-4dd5-a111-9a9a84d6fa3e",
+    "team": "37c55de4-6656-42a7-9e2d-8437ed2cd0b0",
+    "platform": "ipfs",
+    "source": "ipfs",
+    "name": "silent-snow-8532"
+  },
   "build": {
-    "image": "node:alpine",
-    "command": "npm install && npm run build && echo $SOME_ENV",
-    "publicDir": "build",
-    "baseDir": "frontend",
-    "environment": {
-      "SOME_ENV": "Build finished!"
-    }
+    "baseDir": "",
+    "publicDir": "out",
+    "rootDir": ""
   }
- }
+}
