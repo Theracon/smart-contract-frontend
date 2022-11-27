@@ -7,8 +7,10 @@
     "name": "silent-snow-8532"
   },
   "build": {
+    "image": "fleek/next-js:node-16",
     "baseDir": "",
     "publicDir": "out",
-    "rootDir": ""
+    "rootDir": "",
+    "command": "yarn && yarn run build && yarn next export"
   }
 }
