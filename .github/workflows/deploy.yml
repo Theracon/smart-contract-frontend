@@ -1,11 +1,18 @@
-on: [push]
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   test-deploy:
     runs-on: ubuntu-latest
     name: A job to test the action-deploy action by deploying a test site
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
       - name: Smart Contract Lottery
         id: deploy
         uses: fleekhq/action-deploy@v1
